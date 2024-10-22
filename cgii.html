@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Crud  Operations Using  CGI and MySQL</h2>
+    
+    <div>
+        <h2>Add User</h2>
+        <form action="cgis.py">
+        <input  type="text" name="name" placeholder="Enter Name">
+        <input type="text" name="password" placeholder="Enter password">
+        <input type="submit" name="action" value="Create">
+    </form>
+    </div>
+    <div>
+        <form action="cgis.py">
+        <h2>Update User</h2>
+        <input  type="text" name="old_name" placeholder="Enter Name">
+        <input  type="text" name="new_name" placeholder="Enter new Name">
+        <input type="text" name="password" placeholder="Enter new password">
+        <input type="submit" name="action" value="Update">
+    </form>
+    </div>
+    <div>
+        <h2>Read User</h2>
+        <form action="cgis.py">
+            <input type="text" name="username"  placeholder="Enter username">
+            <input type="submit" name="action" value="Read">
+        </form>
+    </div>
+    <div>
+        <h2>Delete User</h2>
+        <form action="cgis.py">
+            <input type="text" name="username"  placeholder="Enter username">
+            <input type="submit" name="action" value="Delete">
+        </form>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CRUD Operations</title>
+</head>
+<body>
+    <h1>Simple CRUD Operations</h1>
+    <hr>
+
+    <div class="content">
+        <!-- Create Form -->
+        <div>
+            <h2>Create User</h2>
+            <form action="cruddb.py" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" name="action" value="Create">
+            </form>
+        </div>
+
+        <!-- Read Form -->
+        <div>
+            <h2>Read User</h2>
+            <form action="cruddb.py" method="post">
+                <input type="text" name="username" placeholder="Enter Username" required>
+                <input type="submit" name="action" value="Read">
+            </form>
+        </div>
+
+        <!-- Update Form -->
+        <div>
+            <h2>Update User</h2>
+            <form action="cruddb.py" method="post">
+                <input type="text" name="old_username" placeholder="Current Username" required>
+                <input type="text" name="new_username" placeholder="New Username" required>
+                <input type="password" name="new_password" placeholder="New Password" required>
+                <input type="submit" name="action" value="Update">
+            </form>
+        </div>
+
+        <!-- Delete Form -->
+        <div>
+            <h2>Delete User</h2>
+            <form action="cruddb.py" method="post">
+                <input type="text" name="username" placeholder="Username to Delete" required>
+                <input type="submit" name="action" value="Delete">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
